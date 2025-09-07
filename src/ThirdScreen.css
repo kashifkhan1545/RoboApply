@@ -1,0 +1,73 @@
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* stack progress bars + heading */
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.progress-container {
+  display: flex;
+  gap: 40px; /* spacing between the two bars */
+}
+
+.progress-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px; /* matches progress bar width */
+  margin-bottom: 8px;
+}
+
+.progress-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+
+.progress-step {
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.85;
+}
+
+.progress-bar {
+  width: 250px;
+  height: 12px;
+  background: #ffc1076b;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ffc107, #ffd54f);
+  transition: width 0.3s ease-in-out;
+}
+
+/* Heading under progress bars */
+.job-heading {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.job-heading .purple {
+  color: #9c27b0; /* purple */
+}
+
+.job-heading .white {
+  color: #ffffff; /* white */
+}
+
+.job-heading .yellow {
+  color: #ffc107; /* yellow */
+}
