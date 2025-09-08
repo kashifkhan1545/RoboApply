@@ -1,22 +1,26 @@
 .right-panel {
   flex: 1;
   display: flex;
-  flex-direction: column; /* stack progress bars + heading */
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+  flex-direction: column; /* stack vertically */
+  justify-content: flex-start; /* push content to top */
+  align-items: flex-start; /* align items to left */
+  gap: 5px; /* reduced gap between items */
+
 }
+
 
 .progress-container {
   display: flex;
-  gap: 40px; /* spacing between the two bars */
+  gap: 20px; /* smaller gap between bars */
 }
 
-.progress-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.job-heading {
+  margin-top: 10px; /* less spacing below progress bars */
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
 }
+
 
 .progress-header {
   display: flex;
@@ -57,7 +61,7 @@
   margin-top: 20px;
   font-size: 30px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
 }
 
 .job-heading .purple {
@@ -70,4 +74,93 @@
 
 .job-heading .yellow {
   color: #ffc107; /* yellow */
+}
+
+/* Note text */
+.note-text {
+  font-size: 14px;
+  margin-top: 0px;
+  width:500px
+}
+
+.note-text .yellow {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.note-text .white {
+  color: #ffffff;
+}
+.box-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.info-box {
+  border: 1px solid #ffffff50; /* light white border */
+  border-radius: 10px;
+  padding: 15px;
+  width: 150px;
+  text-align: center;
+  background-color: #1B1525;
+
+}
+
+.box-img {
+  width: 50%;
+  height: 25%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.box-title {
+  color: #ffc107; /* yellow */
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.box-detail {
+  color: #ffffff; /* white */
+  font-size: 14px;
+  line-height: 1.4;
+}
+.box-img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.box-img {
+  width: 50%;
+  height: 25%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* only affect the rectangle + overlay box */
+.bigger-box {
+  position: relative;
+  width: 50%;     /* bigger than normal 50% */
+  height: 25%;  /* increase height, adjust as needed */
+  margin: 0 auto 12px auto;
+}
+
+.bigger-box .base-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+/* overlay slightly smaller and centered */
+.bigger-box .overlay-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;       /* smaller than base */
+  height: 80%;      /* smaller than base */
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
 }

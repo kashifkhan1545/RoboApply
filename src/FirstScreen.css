@@ -81,7 +81,7 @@
 
 .right-panel {
   flex: 1;
-  background: linear-gradient(to left bottom, #2c003e, #5e1f8c, #8b3edb);
+  background: linear-gradient(to bottom left, #2c003e, #5e1f8c, #8b3edb);
   display: flex;
   justify-content: center;
   align-items: center;
